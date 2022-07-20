@@ -1,0 +1,33 @@
+<!--pages/home/index.wxml-->
+<!-- 视频 -->
+<!-- <video id="myVideo" src="{{src1}}" danmu-list="{{danmuList}}" 
+enable-danmu danmu-btn controls></video>
+<input bindblur="bindInputBlur"/>
+<button bindtap="bindSendDanmu">发送弹幕</button>
+<button bindtap="bindButtonTap">获取视频</button> -->
+<!-- <view class="video-title">荔枝夫妇的2021{{item.title}}</view>
+  <txv-video vid="y333677hz2i" playerid="txv1"></txv-video> -->
+<view class="video-list" wx:for="{{movieList}}" wx:key="user">
+  <view class="video-title">{{item.title}}</view>
+  <view class="video-time">{{formatData(item.create_time)}}</view>
+  <txv-video vid="y333677hz2i" playerid="txv1" objectFit="fill"></txv-video>
+  <!-- <video src="{{item.src}}" objectFit="fill"></video>  -->
+</view>
+<wxs module="formatData">
+  module.exports = function(timestamp) {
+    var date = getDate(timestamp)
+    var y = date.getFullYear()
+    var m = date.getMonth() + 1
+    var d = date.getDate()
+    var h = date.getHours()
+    var i = date.getMinutes()
+    var s = date.getSeconds()
+    return y + '-' + m + '-' + d + ' ' + h + ':' + i + ':' + s
+  }
+</wxs>
+<!-- 图片 -->
+<!-- <swiper indicator-color="white" indicator-active-color="#ff4c91" indicator-dots autoplay interval="3500" duration="1000" vertical circular>
+  <swiper-item wx:for="{{imgUrls}}" wx:key="*this">
+    <image src="{{item}}" mode="aspectFill" />
+  </swiper-item>
+</swiper> -->
