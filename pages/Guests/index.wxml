@@ -1,0 +1,33 @@
+<!--pages/Guests/index.wxml-->
+<!-- <picker range="{{array}}" value="{{index}}" bindchange="pickerChange">
+  <view>当前选择:{{array[index]}}(点我修改)</view>
+</picker> -->
+
+<image class="bg" src="/img/light_invitation_bg_1.png"></image>
+<form bindsubmit="formSubmit">
+  <view class="content">
+    <view>
+      <input name="name" bindblur="nameChange" bindtap="allowSubscribe" placeholder-class="phcolor" placeholder="输入您的姓名" />
+    </view>
+    <view>
+      <input name="phone" bindblur="phoneChange" placeholder-class="phcolor" placeholder="输入您的手机号码" />
+    </view>
+    <view>
+      <picker name="num" bindchange="pickerChange" value="{{picker.index}}" range="{{picker.arr}}">
+        参加婚礼人数：{{picker.arr[picker.index]}}</picker>
+    </view>
+    <view>
+      <input name="wish" placeholder-class="phcolor" placeholder="输入您的祝福语" />
+    </view>
+    <button form-type="submit">提交</button>
+  </view>
+</form>
+<!-- <view>
+  <input name="name" bindblur="nameChange"
+  placeholder-class="phcolor" placeholder="输入您的姓名" />
+</view>
+<view>
+  <input name="phone" bindblur="phoneChange"
+  placeholder-class="phcolor" placeholder="输入您的手机号码" />
+</view>
+<button form-type="submit" report-submit>提交</button> -->
