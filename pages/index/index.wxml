@@ -1,0 +1,43 @@
+<!--index.wxml-->
+<!-- 背景音乐 -->
+<view class="player player-{{isPlayingMusic ? 'play' : 'pause'}}" bindtap="play">
+  <image src="/img/music_icon.png"/>
+  <image src="/img/music_play.png"/>
+</view>
+<!-- <view class="container"> -->
+<!-- 背景图片 -->
+<image class="bg" src="/img/light_invitation_bg_2.png"/>
+<!-- 内容区域 -->
+<view class="content">
+  <!-- 顶部gif图片 -->
+  <image class="content-gif" src="/img/save_the_date.gif" />
+  <!-- 标题 -->
+  <view class="content-title">邀请函</view>
+  <!-- 合照 -->
+  <view class="content-avatar">
+    <image src = "/img/light_invitation_avtar.png"/>
+  </view>
+  <!-- 名字 -->
+  <view class="content-info">
+    <view class="content-name" bindtap="callGroom">
+      <image src="/img/light_invitation_tel.png" />
+      <view>陈凯</view>
+      <view>新郎</view>
+    </view>
+    <view class="content-wedding">
+      <image src="/img/light_invitation_wedding.png"></image>
+    </view>
+    <view class="content-name" bindtap="callBride">
+      <image src="/img/light_invitation_tel.png"/>
+      <view>肖青</view>
+      <view>新娘</view>
+    </view>
+  </view>
+  <!-- 详细信息 -->
+  <view class="content-address">
+    <view>诚挚邀请您来参加我们的婚礼！</view>
+    <view>时间：2023年07月07日</view>
+    <view>地点: 镇江市丹徒区世业洲</view>
+  </view>
+</view>
+<!-- </view> -->
