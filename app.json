@@ -1,0 +1,61 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/Maps/index",
+    "pages/Guests/index"
+  ],
+  "darkmode": true,
+  "themeLocation": "theme.json",
+  "window": {
+    "navigationBarBackgroundColor": "@navBgColor",
+    "navigationBarTextStyle": "@navTxtStyle",
+    "backgroundColor": "@bgColor",
+    "backgroundTextStyle": "@bgTxtStyle",
+    "backgroundColorTop": "@bgColorTop",
+    "backgroundColorBottom": "@bgColorBottom",
+    "pageOrientation": "auto"
+  },
+  "tabBar":{
+    "color":"@tabFontColor",
+    "selectedColor":"@tabSelectedColor",
+    "backgroundColor": "@tabBgColor",
+    "borderStyle": "@tabBorderStyle",
+    "list":[{
+      "pagePath": "pages/index/index",
+      "iconPath": "@iconPath1",
+      "selectedIconPath": "@selectedIconPath1",
+      "text": "邀请函"
+    },{
+      "pagePath": "pages/home/index",
+      "iconPath": "@iconPath2",
+      "selectedIconPath": "@selectedIconPath2",
+      "text": "欢乐时光"
+    },{
+      "pagePath": "pages/Maps/index",
+      "iconPath": "@iconPath3",
+      "selectedIconPath": "@selectedIconPath3",
+      "text": "婚礼地点"
+    },{
+      "pagePath": "pages/Guests/index",
+      "iconPath": "@iconPath4",
+      "selectedIconPath": "@selectedIconPath4",
+      "text": "宾客信息"
+    }
+  ]
+  },
+  
+  "style": "v2",
+  "requiredBackgroundModes": [
+    "audio"
+  ],
+  "plugins": {
+    "tencentvideo":{
+      "version": "2.1.0",
+      "provider": "wxa75efa648b60994b"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {},
+  "lazyCodeLoading": "requiredComponents"
+}

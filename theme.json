@@ -1,0 +1,48 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/home/index",
+    "pages/Maps/index",
+    "pages/Guests/index"
+  ],
+  "light": {
+      "navBgColor": "#f6f6f6",
+      "navTxtStyle": "black",
+      "bgColor": "#ffffff",
+      "bgTxtStyle": "light",
+      "bgColorTop": "#eeeeee",
+      "bgColorBottom": "#efefef",
+      "tabFontColor": "#000000",
+      "tabSelectedColor": "#3cc51f",
+      "tabBgColor": "#ffffff",
+      "tabBorderStyle": "black",
+      "iconPath1": "img/light_invitation_unsel.png",
+      "selectedIconPath1": "img/light_invitation_sel.png",
+      "iconPath2": "img/light_happy_unsel.png",
+      "selectedIconPath2": "img/light_happy_sel.png",
+      "iconPath3": "img/light_map_unsel.png",
+      "selectedIconPath3": "img/light_map_sel.png",
+      "iconPath4": "img/light_guest_unsel.png",
+      "selectedIconPath4": "img/light_guest_sel.png"
+  },
+  "dark": {
+      "navBgColor": "#191919",
+      "navTxtStyle": "white",
+      "bgColor": "#1f1f1f",
+      "bgTxtStyle": "dark",
+      "bgColorTop": "#191919",
+      "bgColorBottom": "#1f1f1f",
+      "tabFontColor": "#ffffff",
+      "tabSelectedColor": "#51a937",
+      "tabBgColor": "#191919",
+      "tabBorderStyle": "white",
+      "iconPath1": "img/dark_invitation_unsel.png",
+      "selectedIconPath1": "img/dark_invitation_sel.png",
+      "iconPath2": "img/dark_happy_unsel.png",
+      "selectedIconPath2": "img/dark_happy_sel.png",
+      "iconPath3": "img/dark_map_unsel.png",
+      "selectedIconPath3": "img/dark_map_sel.png",
+      "iconPath4": "img/dark_guest_unsel.png",
+      "selectedIconPath4": "img/dark_guest_sel.png"
+  }
+}
