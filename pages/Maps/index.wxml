@@ -1,0 +1,4 @@
+<!--pages/Maps/index.wxml-->
+<!-- <map latitude="32.219752" longitude="119.370648" scale="18" />
+<button bindtap="buttonTap">查看我的位置</button> -->
+<map latitude="{{latitude}}" longitude="{{longitude}}" markers="{{markers}}" bindmarkertap="markertap" />
